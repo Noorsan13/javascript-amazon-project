@@ -1,3 +1,4 @@
+import { cart } from '../data/cart.js'
 //save the products data in js first from data js in html
 let productsHTML='';
 
