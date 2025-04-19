@@ -70,3 +70,5 @@ export function updateDeliveryOption(productId, deliveryOptionId) {
 
   saveToStorage();
 }
+
+export { loadFromStorage };
