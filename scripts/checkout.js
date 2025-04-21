@@ -4,6 +4,21 @@ import { loadProducts, loadProductsFetch }  from '../data/products.js';
 import { loadCart } from '../data/cart.js';
 
 
+async function loadPage () {
+
+  await loadProductsFetch();
+
+  const value = await new Promise((resolve) => {
+    loadCart(() => {
+      resolve('nvalue3');
+    });
+  });
+
+    renderOrderSummary();
+    renderPaymentSummary();
+}
+loadPage();
+
 // import '../data/cart-class.js';
 //import '../data/backend-practice.js'
 
